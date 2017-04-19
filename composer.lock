@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1524e2a887e50f36d3e93e71c3cf6985",
+    "content-hash": "1565e6f2717b6f6a19c33a168feb31c1",
     "packages": [
         {
             "name": "php-curl-class/php-curl-class",
@@ -1560,5 +1560,8 @@
     "platform": {
         "php": "~5.6|~7.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.1"
+    }
 }
