@@ -1,0 +1,16 @@
+language: php
+php:
+    - '5.6'
+    - '7.0'
+    - '7.1'
+    - hhvm
+    - nightly
+before_script:
+    - composer self-update
+    - composer update --no-interaction -o
+script:
+    - composer validate --strict
+    - composer test
+    - composer sniff
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
