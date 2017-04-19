@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Unit test suite" tests="6" assertions="10" errors="0" failures="0" skipped="0" time="0.067959">
+    <testsuite name="Pachico\BelugaCDN\Auth\CredentialTest" file="/var/www/belugacdn/tests/Auth/CredentialTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.003224">
+      <testcase name="testGetTokenCreatesValidBasicAuthToken" class="Pachico\BelugaCDN\Auth\CredentialTest" classname="Pachico.BelugaCDN.Auth.CredentialTest" file="/var/www/belugacdn/tests/Auth/CredentialTest.php" line="8" assertions="1" time="0.003224"/>
+    </testsuite>
+    <testsuite name="Pachico\BelugaCDN\Auth\TokenTest" file="/var/www/belugacdn/tests/Auth/TokenTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.001239">
+      <testcase name="testGetTokenReturnsWhatPassedByConstructor" class="Pachico\BelugaCDN\Auth\TokenTest" classname="Pachico.BelugaCDN.Auth.TokenTest" file="/var/www/belugacdn/tests/Auth/TokenTest.php" line="8" assertions="1" time="0.001239"/>
+    </testsuite>
+    <testsuite name="Pachico\BelugaCDN\CacheInvalidationTest" file="/var/www/belugacdn/tests/CacheInvalidationTest.php" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.063496">
+      <testcase name="testInvalidateCacheCallsAPIAndReturnsArray" class="Pachico\BelugaCDN\CacheInvalidationTest" classname="Pachico.BelugaCDN.CacheInvalidationTest" file="/var/www/belugacdn/tests/CacheInvalidationTest.php" line="8" assertions="4" time="0.051158"/>
+      <testcase name="testInvalidLimitRecordsThrowsException" class="Pachico\BelugaCDN\CacheInvalidationTest" classname="Pachico.BelugaCDN.CacheInvalidationTest" file="/var/www/belugacdn/tests/CacheInvalidationTest.php" line="54" assertions="1" time="0.006980"/>
+      <testcase name="testEmptyArrayOfUrlsThrowsException" class="Pachico\BelugaCDN\CacheInvalidationTest" classname="Pachico.BelugaCDN.CacheInvalidationTest" file="/var/www/belugacdn/tests/CacheInvalidationTest.php" line="65" assertions="1" time="0.002294"/>
+      <testcase name="testIfHttpClientErrorReturnsException" class="Pachico\BelugaCDN\CacheInvalidationTest" classname="Pachico.BelugaCDN.CacheInvalidationTest" file="/var/www/belugacdn/tests/CacheInvalidationTest.php" line="76" assertions="2" time="0.003064"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
