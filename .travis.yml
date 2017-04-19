@@ -7,11 +7,10 @@ php:
     - nightly
 before_script:
     - composer self-update
-    - composer update --no-interaction --prefer-lowest
-    - composer dumpautoload -o
+    - composer update --no-interaction -o
 script:
     - composer validate --strict
-    - vendor/bin/phpcs --standard=psr2 src/
-    - vendor/bin/phpunit
+    - composer test
+    - composer sniff
 after_success:
   - bash <(curl -s https://codecov.io/bash)
